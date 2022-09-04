@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?</h1>
+        <div class="centerDiv">
+            <div class="details">
+                <label>ENTER YOUR NAME</label><br>
+                <input type="text" name="" id="nameid">
+            </div>
+
+            <div class="imgdiv">
+                <img src="mz.jpeg" width="200" height="200" class="imgchange">
+            </div>
+
+            <button onclick="zain()"> Check </button>
+
+        </div>
+    </section>
+
+
+    
+
+    <script>
+    zain =()=>{
+        let name=document.querySelector("#nameid").value
+        alert(name)
+        let image=document.querySelector(".imgchange")
+        image.setAttribute("src",`https://joeschmoe.io/api/v1/${name}`)
+        
+    }
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+</body>
+
+</html>
